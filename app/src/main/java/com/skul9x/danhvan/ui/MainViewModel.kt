@@ -179,6 +179,8 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         }
     }
 
+
+
     fun deleteWord(word: WordEntity) {
         viewModelScope.launch {
             assetManager.deleteAsset(word.imageUri)

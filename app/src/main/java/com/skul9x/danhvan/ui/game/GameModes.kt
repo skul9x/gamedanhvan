@@ -222,10 +222,44 @@ fun ExploreMode(
     }
 
     // --- VOICE RECOGNITION ---
-    val speechHelper = remember(context) { com.skul9x.danhvan.util.SpeechRecognizerHelper(context) }
-    val isListening by speechHelper.isListening.collectAsState()
-    val speechResult by speechHelper.result.collectAsState()
-    val speechError by speechHelper.error.collectAsState()
+    val speechRecognizerHelper = remember(context) { com.skul9x.danhvan.util.SpeechRecognizerHelper(context) }
+    // Voice Recognition state
+    val isListening by speechRecognizerHelper.isListening.collectAsState()
+    val result by speechRecognizerHelper.result.collectAsState()
+    val partialResult by speechRecognizerHelper.partialResult.collectAsState()
+    val error by speechRecognizerHelper.error.collectAsState()
+    
+    // Check results (Final & Partial)
+    LaunchedEffect(result, partialResult) {
+        val currentResult = result ?: partialResult
+        if (!currentResult.isNullOrEmpty()) {
+            val spoken = currentResult.lowercase()
+            val target = word.text.lowercase()
+            
+            // Check for exact match or contains
+            if (spoken.contains(target) || target.contains(spoken)) { // Loose matching
+                speechRecognizerHelper.stopListening()
+                
+                // Wait 300ms before showing success
+                delay(300)
+                
+                if (!isRewarded) {
+                    isMerging = true // Trigger success animation
+                    onReward() // Reward via callback
+                    feedbackState = FeedbackType.CORRECT
+                    playSound(com.skul9x.danhvan.R.raw.correct)
+                    viewModel.appendLog("--> SPEECH MATCH: Success! (+1 Star)\n")
+                } else {
+                    viewModel.appendLog("--> SPEECH MATCH: Already rewarded.\n")
+                    android.widget.Toast.makeText(context, "Bạn đã nhận sao cho từ này rồi!", android.widget.Toast.LENGTH_SHORT).show()
+                }
+            } else if (result != null) { 
+                // Only show wrong if it's a FINAL result and incorrect
+                feedbackState = FeedbackType.WRONG
+                playSound(com.skul9x.danhvan.R.raw.wrong)
+            }
+        }
+    }
     
     // Permission State
     var hasMicPermission by remember { mutableStateOf(false) }
@@ -242,40 +276,11 @@ fun ExploreMode(
         ) == android.content.pm.PackageManager.PERMISSION_GRANTED
     }
     
-    // Handle Speech Result
-    LaunchedEffect(speechResult) {
-        speechResult?.let { resultText ->
-            viewModel.appendLog("--> SPEECH: '$resultText'\n")
-            
-            // Normalize for comparison (lowercase, trim)
-            val spoken = resultText.lowercase().trim()
-            val target = word.text.lowercase().trim()
-            
-            // Check if spoken text contains the target word (lenient matching)
-            if (spoken.contains(target) || target.contains(spoken)) {
-                // SUCCESS
-                if (!isRewarded) {
-                    isMerging = true // Trigger success animation
-                    onReward() // Reward via callback
-                    feedbackState = FeedbackType.CORRECT
-                    playSound(com.skul9x.danhvan.R.raw.correct)
-                    viewModel.appendLog("--> SPEECH MATCH: Success! (+1 Star)\n")
-                } else {
-                    viewModel.appendLog("--> SPEECH MATCH: Already rewarded.\n")
-                    android.widget.Toast.makeText(context, "Bạn đã nhận sao cho từ này rồi!", android.widget.Toast.LENGTH_SHORT).show()
-                }
-            } else {
-                // FAIL
-                feedbackState = FeedbackType.WRONG
-                playSound(com.skul9x.danhvan.R.raw.wrong)
-                viewModel.appendLog("--> SPEECH MISMATCH: Expected '$target', got '$spoken'\n")
-            }
-        }
-    }
+    // Old Speech Result logic removed as it's now handled by the new block above.
     
     // Cleanup
     DisposableEffect(Unit) {
-        onDispose { speechHelper.destroy() }
+        onDispose { speechRecognizerHelper.destroy() }
     }
 
     Box(modifier = Modifier.fillMaxSize()) {
@@ -483,7 +488,7 @@ fun ExploreMode(
                      onClick = { 
                          if (!isRewarded) {
                              if (hasMicPermission) {
-                                 if (isListening) speechHelper.stopListening() else speechHelper.startListening()
+                                 if (isListening) speechRecognizerHelper.stopListening() else speechRecognizerHelper.startListening()
                              } else {
                                  permissionLauncher.launch(android.Manifest.permission.RECORD_AUDIO)
                              }

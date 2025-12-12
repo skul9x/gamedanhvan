@@ -22,6 +22,9 @@ class SpeechRecognizerHelper(private val context: Context) {
     private val _error = MutableStateFlow<String?>(null)
     val error: StateFlow<String?> = _error
 
+    private val _partialResult = MutableStateFlow<String?>(null)
+    val partialResult: StateFlow<String?> = _partialResult
+
     init {
         if (SpeechRecognizer.isRecognitionAvailable(context)) {
             speechRecognizer = SpeechRecognizer.createSpeechRecognizer(context)
@@ -53,7 +56,12 @@ class SpeechRecognizerHelper(private val context: Context) {
                     }
                 }
 
-                override fun onPartialResults(partialResults: Bundle?) {}
+                override fun onPartialResults(partialResults: Bundle?) {
+                    val matches = partialResults?.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION)
+                    if (!matches.isNullOrEmpty()) {
+                        _partialResult.value = matches[0]
+                    }
+                }
 
                 override fun onEvent(eventType: Int, params: Bundle?) {}
             })
@@ -64,6 +72,7 @@ class SpeechRecognizerHelper(private val context: Context) {
 
     fun startListening() {
         _result.value = null
+        _partialResult.value = null
         _error.value = null
         val intent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH).apply {
             putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM)
@@ -72,6 +81,7 @@ class SpeechRecognizerHelper(private val context: Context) {
             // Silence detection: Stop if no speech for 2 seconds
             putExtra(RecognizerIntent.EXTRA_SPEECH_INPUT_COMPLETE_SILENCE_LENGTH_MILLIS, 2000L)
             putExtra(RecognizerIntent.EXTRA_SPEECH_INPUT_POSSIBLY_COMPLETE_SILENCE_LENGTH_MILLIS, 2000L)
+            putExtra(RecognizerIntent.EXTRA_PARTIAL_RESULTS, true)
         }
         speechRecognizer?.startListening(intent)
     }
