@@ -138,6 +138,7 @@ fun StickerBookScreen(
                         item = shopItem,
                         placedSticker = placed,
                         isSelected = selectedStickerId == placed.id,
+                        canvasBounds = canvasSize, // Pass canvas size for bounds checking
                         onSelect = { selectedStickerId = placed.id },
                         onUpdate = { x, y, scale, rot ->
                             viewModel.updateSticker(placed.id, x, y, scale, rot)
@@ -294,12 +295,32 @@ fun StickerBookScreen(
                             .clickable {
                                 // Trigger Animation
                                 scope.launch {
+                                    // Validate canvasSize before calculating random position
+                                    val minWidth = 300
+                                    val minHeight = 500
+                                    
+                                    if (canvasSize.width < minWidth || canvasSize.height < minHeight) {
+                                        // Canvas not ready or too small, place at safe default position
+                                        val safeX = 150f
+                                        val safeY = 200f
+                                        viewModel.placeSticker(item.id, safeX, safeY)
+                                        return@launch
+                                    }
+                                    
                                     flyingStickerItem = item
                                     startPos = itemPosition
                                     
-                                    // Target: Random position on the page or center
-                                    val targetX = Random.nextFloat() * (canvasSize.width - 200) + 100
-                                    val targetY = Random.nextFloat() * (canvasSize.height - 400) + 200
+                                    // Target: Random position on the page with safe margins
+                                    // Ensure we have positive ranges for random calculation
+                                    val horizontalMargin = 150
+                                    val topMargin = 150
+                                    val bottomMargin = 200
+                                    
+                                    val availableWidth = (canvasSize.width - horizontalMargin * 2).coerceAtLeast(100)
+                                    val availableHeight = (canvasSize.height - topMargin - bottomMargin).coerceAtLeast(100)
+                                    
+                                    val targetX = Random.nextFloat() * availableWidth + horizontalMargin
+                                    val targetY = Random.nextFloat() * availableHeight + topMargin
                                     
                                     flyingStickerAnim.snapTo(startPos)
                                     flyingStickerAnim.animateTo(
@@ -372,23 +393,51 @@ fun StickerItem(
     item: com.skul9x.danhvan.data.ShopItem,
     placedSticker: StickerPlacement,
     isSelected: Boolean,
+    canvasBounds: androidx.compose.ui.unit.IntSize, // Canvas size for bounds checking
     onSelect: () -> Unit,
     onUpdate: (Float, Float, Float, Float) -> Unit,
     onInteractionEnd: () -> Unit
 ) {
-    var offsetX by remember { mutableStateOf(placedSticker.x) }
-    var offsetY by remember { mutableStateOf(placedSticker.y) }
-    var scale by remember { mutableStateOf(placedSticker.scale) }
-    var rotation by remember { mutableStateOf(placedSticker.rotation) }
+    // Sticker visual size in pixels
+    val density = LocalDensity.current
+    val stickerSizePx = with(density) { 115.dp.toPx() }
+    
+    // Use key to force re-initialization when sticker ID changes
+    // This ensures loading correct position from storage when app restarts
+    var offsetX by remember(placedSticker.id) { mutableStateOf(placedSticker.x) }
+    var offsetY by remember(placedSticker.id) { mutableStateOf(placedSticker.y) }
+    var scale by remember(placedSticker.id) { mutableStateOf(placedSticker.scale) }
+    var rotation by remember(placedSticker.id) { mutableStateOf(placedSticker.rotation) }
 
-    // Sync with external state only if NOT currently being manipulated to avoid jitter?
-    // Actually, since we only update VM state, this sync is fine as long as VM update is fast.
-    LaunchedEffect(placedSticker) {
-        if (offsetX != placedSticker.x) offsetX = placedSticker.x
-        if (offsetY != placedSticker.y) offsetY = placedSticker.y
-        if (scale != placedSticker.scale) scale = placedSticker.scale
-        if (rotation != placedSticker.rotation) rotation = placedSticker.rotation
+    // Helper function to clamp position within bounds
+    fun clampPosition(x: Float, y: Float, currentScale: Float): Pair<Float, Float> {
+        val scaledSize = stickerSizePx * currentScale
+        val headerHeight = with(density) { 80.dp.toPx() } // Space for header
+        
+        val minX = 0f
+        val maxX = (canvasBounds.width - scaledSize).coerceAtLeast(0f)
+        val minY = headerHeight
+        val maxY = (canvasBounds.height - scaledSize).coerceAtLeast(headerHeight)
+        
+        return Pair(
+            x.coerceIn(minX, maxX),
+            y.coerceIn(minY, maxY)
+        )
     }
+
+    // Sync with external state when placedSticker data changes (e.g., after restore)
+    // Using individual properties as keys for more precise updates
+    LaunchedEffect(placedSticker.x, placedSticker.y, placedSticker.scale, placedSticker.rotation) {
+        offsetX = placedSticker.x
+        offsetY = placedSticker.y
+        scale = placedSticker.scale
+        rotation = placedSticker.rotation
+    }
+
+    // Use rememberUpdatedState to avoid stale closures in pointerInput
+    val currentOnSelect by rememberUpdatedState(onSelect)
+    val currentOnUpdate by rememberUpdatedState(onUpdate)
+    val currentOnInteractionEnd by rememberUpdatedState(onInteractionEnd)
 
     Box(
         modifier = Modifier
@@ -398,16 +447,18 @@ fun StickerItem(
                 scaleY = scale,
                 rotationZ = rotation
             )
-            .pointerInput(Unit) {
+            .pointerInput(placedSticker.id, canvasBounds) { // Also key by canvasBounds
                 // Combined Gesture Detector with Action Up detection for saving
                 awaitPointerEventScope {
                     while (true) {
                         val down = awaitFirstDown(requireUnconsumed = false)
-                        onSelect() // Select on touch down
+                        down.consume() // IMPORTANT: Consume immediately to prevent propagation to parent
+                        currentOnSelect() // Select on touch down
                         
                         var zoom = 1f
                         var pan = Offset.Zero
                         var rot = 0f
+                        var hasInteracted = false
                         
                         do {
                             val event = awaitPointerEvent()
@@ -418,6 +469,7 @@ fun StickerItem(
                                 val panChange = event.calculatePan()
                                 
                                 if (zoomChange != 1f || rotationChange != 0f || panChange != Offset.Zero) {
+                                    hasInteracted = true
                                     zoom *= zoomChange
                                     rot += rotationChange
                                     pan += panChange
@@ -426,29 +478,27 @@ fun StickerItem(
                                     scale *= zoomChange
                                     rotation += rotationChange
                                     // Limit scale to prevent microscopic or giant stickers
-                                    scale = scale.coerceIn(0.5f, 5.0f) // Increased max scale slightly
+                                    scale = scale.coerceIn(0.5f, 3.0f) // Reduced max to prevent overflow
                                     
-                                    // Apply Pan (rotated? No, pan is usually screen space)
-                                    // But since we are modifying offset of the Box, screen space pan is correct.
-                                    // However, if we use graphicsLayer for rotation, the coordinate system rotates?
-                                    // No, offset is applied BEFORE graphicsLayer in modifier chain order above?
-                                    // .offset { ... } .graphicsLayer { ... }
-                                    // Yes, offset is outer. So pan is in parent coordinates. Correct.
+                                    // Calculate new position with bounds checking
+                                    val newX = offsetX + panChange.x
+                                    val newY = offsetY + panChange.y
+                                    val (clampedX, clampedY) = clampPosition(newX, newY, scale)
+                                    offsetX = clampedX
+                                    offsetY = clampedY
                                     
-                                    offsetX += panChange.x
-                                    offsetY += panChange.y
-                                    
-                                    onUpdate(offsetX, offsetY, scale, rotation)
-                                    
-                                    event.changes.forEach { 
-                                        if (it.positionChanged()) it.consume() 
-                                    }
+                                    currentOnUpdate(offsetX, offsetY, scale, rotation)
                                 }
+                                
+                                // ALWAYS consume all events to prevent propagation to parent
+                                event.changes.forEach { it.consume() }
                             }
                         } while (event.changes.any { it.pressed })
                         
-                        // All pointers up
-                        onInteractionEnd()
+                        // All pointers up - only save if there was actual interaction
+                        if (hasInteracted) {
+                            currentOnInteractionEnd()
+                        }
                     }
                 }
             }

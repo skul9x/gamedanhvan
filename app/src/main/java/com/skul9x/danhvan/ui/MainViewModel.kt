@@ -367,17 +367,39 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         application.getSharedPreferences("user_progress", Context.MODE_PRIVATE) 
     }
 
+    // --- STICKER BOOK SYSTEM (declared before init to ensure proper initialization) ---
+    private val _placedStickers = kotlinx.coroutines.flow.MutableStateFlow<List<StickerPlacement>>(emptyList())
+    val placedStickers: StateFlow<List<StickerPlacement>> = _placedStickers
+
+    private val _currentStickerPage = kotlinx.coroutines.flow.MutableStateFlow(0)
+    val currentStickerPage: StateFlow<Int> = _currentStickerPage
+
+    private val _stickerInventory = kotlinx.coroutines.flow.MutableStateFlow<Map<String, Int>>(emptyMap())
+    val stickerInventory: StateFlow<Map<String, Int>> = _stickerInventory
+
     init {
         // Load Shop Data
         loadShopItems()
         
+        // Load inventory & settings
         val savedInventory = prefs.getStringSet("inventory", setOf("theme_default")) ?: setOf("theme_default")
         _inventory.value = savedInventory.toList()
         _currentTheme.value = prefs.getString("current_theme", "theme_default") ?: "theme_default"
         _currentEffect.value = prefs.getString("current_effect", null)
         _effectIntensity.value = prefs.getFloat("effect_intensity", 1.0f)
         
+        // Load sticker data
+        try {
+            loadStickerPlacements()
+            loadStickerInventory()
+        } catch (e: Exception) {
+            e.printStackTrace()
+            android.util.Log.e("MainViewModel", "Error loading sticker data", e)
+        }
+        
+        // Initialize stars and daily reward check
         checkDateAndReset()
+        
         // Check for missing topic images after a short delay to let things settle
         viewModelScope.launch {
             kotlinx.coroutines.delay(2000)
@@ -497,41 +519,11 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         prefs.edit().putFloat("effect_intensity", value).apply()
     }
 
-    // --- STICKER BOOK SYSTEM ---
-    
-
-
-    private val _placedStickers = kotlinx.coroutines.flow.MutableStateFlow<List<StickerPlacement>>(emptyList())
-    val placedStickers: StateFlow<List<StickerPlacement>> = _placedStickers
-
-    // Current Sticker Page
-    private val _currentStickerPage = kotlinx.coroutines.flow.MutableStateFlow(0)
-    val currentStickerPage: StateFlow<Int> = _currentStickerPage
+    // --- STICKER BOOK FUNCTIONS ---
 
     fun setStickerPage(page: Int) {
         if (page >= 0) {
             _currentStickerPage.value = page
-        }
-    }
-
-    // Sticker Inventory: Map<StickerID, Quantity>
-    private val _stickerInventory = kotlinx.coroutines.flow.MutableStateFlow<Map<String, Int>>(emptyMap())
-    val stickerInventory: StateFlow<Map<String, Int>> = _stickerInventory
-
-    init {
-        try {
-            loadStickerPlacements()
-            loadStickerInventory()
-            
-            checkDateAndReset()
-            // Check for missing topic images after a short delay to let things settle
-            viewModelScope.launch {
-                kotlinx.coroutines.delay(2000)
-                checkAndFetchTopicImages()
-            }
-        } catch (e: Exception) {
-            e.printStackTrace()
-            android.util.Log.e("MainViewModel", "Error in init", e)
         }
     }
 
@@ -596,12 +588,21 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         }
     }
 
+    // Debounce job for auto-saving sticker positions
+    private var stickerSaveJob: kotlinx.coroutines.Job? = null
+    
     fun updateSticker(id: String, x: Float, y: Float, scale: Float, rotation: Float) {
         _placedStickers.value = _placedStickers.value.map { 
             if (it.id == id) it.copy(x = x, y = y, scale = scale, rotation = rotation) else it 
         }
-        // Removed explicit saveStickerPlacements here for performance
-        // Call UI should invoke saveStickerPlacements() on drag end
+        
+        // Debounced auto-save: save after 500ms of no updates
+        // This ensures data is saved even if app is killed, while avoiding excessive writes
+        stickerSaveJob?.cancel()
+        stickerSaveJob = viewModelScope.launch {
+            kotlinx.coroutines.delay(500)
+            saveStickerPlacements()
+        }
     }
 
     fun removeSticker(id: String) {
