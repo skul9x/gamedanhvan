@@ -74,6 +74,10 @@ fun StickerBookScreen(
     val flyingStickerAnim = remember { Animatable(Offset.Zero, Offset.VectorConverter) }
     var startPos by remember { mutableStateOf(Offset.Zero) }
     
+    // Double-tap Prev button to recall all stickers (when on page 0)
+    var lastPrevTapTime by remember { mutableStateOf(0L) }
+    var showRecallConfirmation by remember { mutableStateOf(false) }
+    
     // Canvas dimensions for centering
     var canvasSize by remember { mutableStateOf(androidx.compose.ui.unit.IntSize.Zero) }
 
@@ -201,9 +205,24 @@ fun StickerBookScreen(
                 Row(
                     verticalAlignment = Alignment.CenterVertically
                 ) {
-                    // Left Arrow
+                    // Left Arrow - Double tap on page 0 to recall all stickers
                     CandyButton(
-                         onClick = { if (currentPage > 0) viewModel.setStickerPage(currentPage - 1) },
+                         onClick = { 
+                             if (currentPage > 0) {
+                                 viewModel.setStickerPage(currentPage - 1)
+                                 lastPrevTapTime = 0L // Reset double-tap timer when navigating
+                             } else {
+                                 // On page 0: detect double-tap for recall
+                                 val currentTime = System.currentTimeMillis()
+                                 if (currentTime - lastPrevTapTime < 500) {
+                                     // Double tap detected! Show confirmation
+                                     showRecallConfirmation = true
+                                     lastPrevTapTime = 0L
+                                 } else {
+                                     lastPrevTapTime = currentTime
+                                 }
+                             }
+                         },
                          color = Color.Transparent,
                          contentPadding = PaddingValues(0.dp)
                     ) {
@@ -384,6 +403,45 @@ fun StickerBookScreen(
                     }
                 }
             }
+        }
+        
+        // Recall Confirmation Dialog
+        if (showRecallConfirmation) {
+            val totalStickers = placedStickers.size
+            val totalPages = if (placedStickers.isEmpty()) 0 else placedStickers.maxOf { it.page } + 1
+            
+            AlertDialog(
+                onDismissRequest = { showRecallConfirmation = false },
+                title = { 
+                    Text(
+                        "Thu hồi tất cả sticker?",
+                        fontWeight = FontWeight.Bold
+                    ) 
+                },
+                text = { 
+                    Text("Bạn có muốn thu hồi tất cả $totalStickers sticker từ $totalPages trang về kho không?\n\nTất cả sticker sẽ được trả về \"Sticker của bé\" để bạn sắp xếp lại từ đầu.")
+                },
+                confirmButton = {
+                    CandyButton(
+                        onClick = {
+                            viewModel.recallAllStickers() // Recall from ALL pages
+                            selectedStickerId = null
+                            showRecallConfirmation = false
+                        },
+                        color = Color(0xFF4CAF50)
+                    ) {
+                        Text("Thu hồi tất cả", color = Color.White, fontWeight = FontWeight.Bold)
+                    }
+                },
+                dismissButton = {
+                    CandyButton(
+                        onClick = { showRecallConfirmation = false },
+                        color = Color.Gray
+                    ) {
+                        Text("Hủy", color = Color.White)
+                    }
+                }
+            )
         }
     }
 }

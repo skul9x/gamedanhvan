@@ -621,6 +621,59 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         }
     }
     
+    /**
+     * Recall all stickers from a specific page back to inventory.
+     * This allows users to reorganize all stickers at once.
+     */
+    fun recallAllStickersFromPage(page: Int) {
+        val stickersOnPage = _placedStickers.value.filter { it.page == page }
+        
+        if (stickersOnPage.isEmpty()) return
+        
+        // Return all stickers to inventory
+        val newInventory = _stickerInventory.value.toMutableMap()
+        stickersOnPage.forEach { sticker ->
+            val currentCount = newInventory[sticker.stickerId] ?: 0
+            newInventory[sticker.stickerId] = currentCount + 1
+        }
+        _stickerInventory.value = newInventory
+        saveStickerInventory()
+        
+        // Remove all stickers from this page
+        _placedStickers.value = _placedStickers.value.filter { it.page != page }
+        saveStickerPlacements()
+        
+        appendLog("Recalled ${stickersOnPage.size} stickers from page ${page + 1}")
+    }
+    
+    /**
+     * Recall ALL stickers from ALL pages back to inventory.
+     * This allows users to completely reorganize their sticker book.
+     */
+    fun recallAllStickers() {
+        val allPlacedStickers = _placedStickers.value
+        
+        if (allPlacedStickers.isEmpty()) return
+        
+        // Return all stickers to inventory
+        val newInventory = _stickerInventory.value.toMutableMap()
+        allPlacedStickers.forEach { sticker ->
+            val currentCount = newInventory[sticker.stickerId] ?: 0
+            newInventory[sticker.stickerId] = currentCount + 1
+        }
+        _stickerInventory.value = newInventory
+        saveStickerInventory()
+        
+        // Remove all stickers from all pages
+        _placedStickers.value = emptyList()
+        saveStickerPlacements()
+        
+        // Reset to page 0
+        _currentStickerPage.value = 0
+        
+        appendLog("Recalled ${allPlacedStickers.size} stickers from all pages")
+    }
+    
     // Override purchaseItem to handle stickers
     fun purchaseItem(item: com.skul9x.danhvan.data.ShopItem) {
         val currentTotal = prefs.getInt("total_stars", 0)
