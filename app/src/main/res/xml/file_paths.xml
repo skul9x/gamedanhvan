@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- External files directory for backup files -->
+    <external-files-path name="backup_files" path="." />
+    
+    <!-- Internal files directory for custom stickers and word images -->
+    <files-path name="internal_files" path="." />
+    
+    <!-- Cache directory for temporary backup operations -->
+    <cache-path name="cache_files" path="." />
+</paths>
