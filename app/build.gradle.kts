@@ -4,6 +4,9 @@ plugins {
     alias(libs.plugins.ksp)
 }
 
+import java.util.Properties
+import java.io.FileInputStream
+
 android {
     namespace = "com.skul9x.danhvan"
     compileSdk = 34
@@ -24,15 +27,25 @@ android {
     // --- BẮT ĐẦU PHẦN THÊM MỚI ---
     signingConfigs {
         create("release") {
-            // Đảm bảo file skul9x.jks đã nằm trong thư mục 'app'
-            storeFile = file("skul9x.jks")
+            // Load keystore info from local.properties (not committed to version control)
+            val localProperties = Properties()
+            val localFile = rootProject.file("local.properties")
+            if (localFile.exists()) {
+                localFile.inputStream().use { localProperties.load(it) }
+            }
 
-            // Thay mật khẩu của bạn vào 2 dòng dưới đây
-            storePassword = "@Colenao123@"
-            keyPassword = "@Colenao123@"
+            // Defaults or load from properties
+            val storeFileName = localProperties.getProperty("storeFile")
+            val storePwd = localProperties.getProperty("storePassword")
+            val keyPwd = localProperties.getProperty("keyPassword")
+            val keyAliasName = localProperties.getProperty("keyAlias")
 
-            // Alias bạn đã tìm thấy ở bước trước
-            keyAlias = "key0"
+            if (storeFileName != null && storePwd != null && keyPwd != null && keyAliasName != null) {
+                storeFile = file(storeFileName)
+                storePassword = storePwd
+                keyPassword = keyPwd
+                keyAlias = keyAliasName
+            }
         }
     }
     // --- KẾT THÚC PHẦN THÊM MỚI ---
