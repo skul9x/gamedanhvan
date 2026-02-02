@@ -1,0 +1,53 @@
+{
+    "updated_at": "2026-02-02",
+    "working_on": {
+        "feature": "Security & Stability",
+        "task": "Fixing hardcoded credentials and build errors",
+        "status": "completed",
+        "files": [
+            "app/build.gradle.kts",
+            "local.properties",
+            "GameModes.kt"
+        ],
+        "notes": "Moved keystore password to local.properties. Resolved git merges."
+    },
+    "recent_changes": [
+        {
+            "timestamp": "2026-02-02",
+            "type": "security",
+            "description": "Moved hardcoded keystore credentials from build.gradle.kts to local.properties.",
+            "files": [
+                "app/build.gradle.kts",
+                "local.properties"
+            ]
+        },
+        {
+            "timestamp": "2026-02-02",
+            "type": "fix",
+            "description": "Resolved Git merge conflicts in GameModes.kt, preserving 'vi rút' loanword fix.",
+            "files": [
+                "app/src/main/java/com/skul9x/danhvan/ui/game/GameModes.kt"
+            ]
+        },
+        {
+            "timestamp": "2026-02-02",
+            "type": "fix",
+            "description": "Fixed build error 'Unresolved reference: util' in build.gradle.kts.",
+            "files": [
+                "app/build.gradle.kts"
+            ]
+        }
+    ],
+    "pending_tasks": [
+        {
+            "task": "Refactor MainViewModel (God Class)",
+            "priority": "medium",
+            "notes": "Split into smaller ViewModels"
+        },
+        {
+            "task": "Optimize filtering performance",
+            "priority": "low",
+            "notes": "Use Room queries instead of list filtering"
+        }
+    ]
+}

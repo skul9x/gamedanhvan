@@ -1,0 +1,48 @@
+{
+  "meta": { "schema_version": "1.1.0", "awf_version": "3.3.0" },
+  "project": { 
+    "name": "Game Đánh Vần", 
+    "type": "Android Application", 
+    "status": "In Development",
+    "description": "Educational game for kids to learn Vietnamese spelling."
+  },
+  "tech_stack": { 
+    "frontend": { "language": "Kotlin", "ui_framework": "Jetpack Compose" },
+    "backend": { "type": "Local", "database": "Room Database" },
+    "libraries": ["Coil (Image Loading)", "Gson (JSON)", "Android Speech Recognizer"]
+  },
+  "features": [
+    {
+      "name": "Voice Recognition",
+      "description": "Recognizes spoken Vietnamese words. Includes special normalization handling for loanwords (e.g., 'pi a nô' -> 'piano') and 'đ'/'d' conversion.",
+      "status": "Active"
+    },
+    {
+      "name": "Explore Mode",
+      "description": "Learn words with images and speech.",
+      "status": "Active"
+    },
+    {
+      "name": "Shop & Stickers",
+      "description": "Earn stars to buy stickers and customize themes.",
+      "status": "Active"
+    },
+    {
+      "name": "Backup/Restore",
+      "description": "Backup data to ZIP file (JSON + Images).",
+      "status": "Active"
+    }
+  ],
+  "knowledge_items": { 
+    "patterns": [
+      "MVVM Architecture (MainViewModel 'God Class' needs refactoring)"
+    ], 
+    "gotchas": [
+      "Voice recognition for 'Ca na đa' requires exact normalization.",
+      "Zip Slip vulnerability protection implemented in BackupManager."
+    ],
+    "conventions": [
+      "Keystore credentials must be in local.properties"
+    ]
+  }
+}
