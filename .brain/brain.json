@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "schema_version": "1.1.0",
+    "awf_version": "4.0.0",
+    "updated_at": "2026-02-07T23:45:00+07:00"
+  },
+  "project": {
+    "name": "Game Đánh Vần",
+    "type": "Android Application (Kotlin + Jetpack Compose)",
+    "status": "In Development",
+    "description": "Educational game for kids to learn Vietnamese spelling."
+  },
+  "tech_stack": {
+    "frontend": {
+      "language": "Kotlin",
+      "ui_framework": "Jetpack Compose"
+    },
+    "backend": {
+      "type": "Local",
+      "database": "Room Database"
+    },
+    "libraries": [
+      "Coil (Image Loading)",
+      "Gson (JSON)",
+      "Android Speech Recognizer",
+      "OkHttp"
+    ],
+    "audio": "MediaPlayer via SoundManager singleton"
+  },
+  "key_files": {
+    "game_modes": "app/src/main/java/com/skul9x/danhvan/ui/game/GameModes.kt",
+    "game_screen": "app/src/main/java/com/skul9x/danhvan/ui/game/GameScreen.kt",
+    "sound_manager": "app/src/main/java/com/skul9x/danhvan/util/SoundManager.kt",
+    "google_image": "app/src/main/java/com/skul9x/danhvan/util/GoogleImageHelper.kt",
+    "main_viewmodel": "app/src/main/java/com/skul9x/danhvan/ui/MainViewModel.kt"
+  },
+  "features": [
+    {
+      "name": "Voice Recognition",
+      "description": "Recognizes spoken Vietnamese words with loanword normalization.",
+      "status": "Active"
+    },
+    {
+      "name": "Explore Mode",
+      "description": "Learn words with images and speech.",
+      "status": "Active"
+    },
+    {
+      "name": "Spelling Mode",
+      "description": "Ghép các âm tiết thành từ đúng.",
+      "status": "Active"
+    },
+    {
+      "name": "Quiz Mode",
+      "description": "Trắc nghiệm chọn từ đúng.",
+      "status": "Active"
+    },
+    {
+      "name": "Memory Mode",
+      "description": "Lật hình ghép cặp tính.",
+      "status": "Active"
+    },
+    {
+      "name": "Shop & Stickers",
+      "description": "Earn stars to buy stickers.",
+      "status": "Active"
+    },
+    {
+      "name": "Backup/Restore",
+      "description": "Backup data to ZIP file.",
+      "status": "Active"
+    }
+  ],
+  "knowledge_items": {
+    "patterns": [
+      "MVVM Architecture (MainViewModel needs refactoring)",
+      "SoundManager singleton for MediaPlayer pooling - prevents resource leak",
+      "Immutable data class with copy() for Compose state updates",
+      "LaunchedEffect for lifecycle-safe async operations in Compose",
+      "WithContext + Rethrow CancellationException for structured concurrency",
+      "StarMutex (Kotlin Mutex) for thread-safe star transactions in Coroutines",
+      "Json Data Versioning migration logic in SharedPreferences",
+      "@Synchronized for non-suspend UI-thread helper methods (SpeechRecognizerHelper)",
+      "InteractionSource + collectIsPressedAsState for standard Jetpack Compose interactions",
+      "Callback pattern for async state transition confirmation (ViewModel -> UI)",
+      "Local Snapshot capture for thread-safe access to nullable state during recomposition",
+      "Inner Click Consumption to prevent propagation in overlay dialogs",
+      "Unified State Machine for UI animations (AnimationPhase) to prevent conflicting state updates",
+      "Result Locking pattern for async callbacks (isResultLocked) to prevent race conditions",
+      "Safe Reward wrapper with rememberUpdatedState and local locks to prevent double-rewards"
+    ],
+    "gotchas": [
+      "Voice recognition for 'Ca na đa' requires exact normalization.",
+      "Zip Slip vulnerability protection in BackupManager.",
+      "NEVER mutate properties inside mutableStateOf objects - use copy() instead",
+      "NEVER update Compose state inside external callbacks - use trigger state + LaunchedEffect",
+      "ALWAYS null-check File paths (imageUri) before loading images to prevent NPE",
+      "ALWAYS rethrow CancellationException in suspend functions to allow proper cancellation",
+      "ALWAYS capture nullable properties to local val for thread-safe TOCTOU fixes",
+      "ALWAYS null-check platform types (Java ArrayList!) elements individually",
+      "ALWAYS use InteractionSource for press/drag states instead of manual mutableStateOf",
+      "ALWAYS randomize math gate questions to prevent child pattern memorization"
+    ],
+    "conventions": [
+      "Keystore credentials must be in local.properties"
+    ],
+    "recent_bug_fixes_2026_02_07": [
+      "NPE: word.imageUri null -> added null check + placeholder UI",
+      "MemoryCard: changed var to val for proper Compose recomposition",
+      "Resource Leak: MediaPlayer -> SoundManager singleton with cancel logic",
+      "Resource Leak: ImageLoader -> Use context.imageLoader singleton in GameScreen",
+      "Resource Leak: OkHttpClient -> Replaced custom ImageLoader with Coil.imageLoader singleton in GameModes.kt",
+      "Blocking Main Thread: SearchImage -> Moved network call to withContext(Dispatchers.IO) in GameModes.kt",
+      "Wrong Dispatcher: SearchImage -> Correctly using Dispatchers.IO for networking in GameModes.kt",
+      "Error Handling: onError callback -> retryTrigger state + LaunchedEffect (lifecycle-safe)",
+      "Structured Concurrency: launch(IO) -> withContext(IO) in GameScreen",
+      "CancellationException: Rethrowing added in GoogleImageHelper and MainViewModel",
+      "Race Condition: Replaced synchronized with StarMutex in MainViewModel for thread-safety",
+      "Json Parsing: Added version migration for Shop/Sticker data to prevent crashes on schema change",
+      "Leaking State: Fixed appendLog to use immutable list operations instead of mutation",
+      "Resource Leak: SpeechRecognizerHelper listener cleanup and StateFlow reset",
+      "Race Condition: SpeechRecognizerHelper @Synchronized + Local capture (TOCTOU)",
+      "Platform Type: SpeechRecognizerHelper result handling with firstOrNull()",
+      "Memory Leak: ParentalScreen importJson() -> Removed Context param, use getApplication()",
+      "Blocking Main Thread: ParentalScreen share backup -> Moved to ViewModel.shareBackupFile()",
+      "Improper Error Handling: ParentalScreen share backup -> Added try-catch with user notification",
+      "Performance: Added key to LazyColumn items in ParentalScreen.kt",
+      "NPE: StickerBookScreen.kt replaced !! with ?.let for state variables",
+      "Memory Churn: StickerBookScreen.kt used remember to cache Paint in drawIntoCanvas",
+      "Stale State: Fixed Shop celebration logic by using purchase callback",
+      "Dead Code: Fixed ShopItemCard animation using InteractionSource",
+      "UX Bug: Fixed nested clickable issue in ShopItemCard using conditional Modifier",
+      "Bug 1 (Logic): Fixed hardcoded isEquipped by adding equippedSticker tracking in ViewModel",
+      "Bug 3 (UX): Fixed celebration dialog tap-to-dismiss propagation",
+      "Bug 4 (Stability): Fixed potential NPE by capturing celebratedItem and itemToDelete in local snapshots",
+      "Bug 7 (Security): Randomized Math Gate problem (range 10-30)",
+      "Feature: Added Purchase Confirmation Dialog",
+      "Build Fix: Removed duplicate imports in ShopScreen.kt",
+      "Critical Bug: Merge animation stuck - Refactored ExploreMode to unified State Machine (AnimationPhase)",
+      "Critical Bug: Race condition (partial✅→final❌) - Implemented isResultLocked guard in speech handler",
+      "Medium Bug: SpellingMode infinite reward - Added local hasLocallyRewarded lock to prevent farming",
+      "Minor Bug: Font size shrink infinite loop - Added minFontSize and maxIterations guards to ResizingStrokeText",
+      "Minor Bug: QuizMode/FillInMode edge cases - Added guards for low word count and duplicate distractors"
+    ]
+  }
+}

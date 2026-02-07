@@ -1,0 +1,65 @@
+{
+    "updated_at": "2026-02-08T00:20:00+07:00",
+    "working_on": {
+        "feature": "GameModes Stability & Animation Refactor",
+        "task": "Fixed all 7 identified bugs (Critical, Medium, Minor) in GameModes.kt",
+        "status": "completed",
+        "files": [
+            "app/src/main/java/com/skul9x/danhvan/ui/game/GameModes.kt"
+        ]
+    },
+    "recent_changes": [
+        {
+            "timestamp": "2026-02-08T00:15:00+07:00",
+            "type": "refactor",
+            "description": "Implemented unified State Machine (AnimationPhase) for ExploreMode to fix animation stuck bug",
+            "files": [
+                "GameModes.kt"
+            ]
+        },
+        {
+            "timestamp": "2026-02-08T00:15:00+07:00",
+            "type": "bugfix",
+            "description": "Fixed Race Condition in speech recognition using isResultLocked guard",
+            "files": [
+                "GameModes.kt"
+            ]
+        },
+        {
+            "timestamp": "2026-02-08T00:15:00+07:00",
+            "type": "bugfix",
+            "description": "Fixed reward logic bugs (Double Reward and SpellingMode farming)",
+            "files": [
+                "GameModes.kt"
+            ]
+        },
+        {
+            "timestamp": "2026-02-08T00:15:00+07:00",
+            "type": "bugfix",
+            "description": "Fixed ResizingStrokeText infinite shrink loop and Quiz/FillIn edge cases",
+            "files": [
+                "GameModes.kt"
+            ]
+        }
+    ],
+    "decisions_made": [
+        {
+            "decision": "Transition ExploreMode to an explicit State Machine (AnimationPhase enum)",
+            "reason": "Eliminates race conditions between multiple LaunchedEffects and simplifies state management"
+        },
+        {
+            "decision": "Use remember(word.text) for all game states",
+            "reason": "Ensures all UI and logic states properly reset when the user navigates to a new word"
+        }
+    ],
+    "pending_tasks": [
+        {
+            "task": "Manual verification of speech recognition feedback in app",
+            "priority": "high"
+        },
+        {
+            "task": "Fix LOW bugs in SpeechRecognizerHelper.kt (Lapsed Listener, Improper Error Handling)",
+            "priority": "low"
+        }
+    ]
+}

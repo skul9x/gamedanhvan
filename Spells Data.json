@@ -1,0 +1,2910 @@
+[
+    {
+        "text": "Con Mèo",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Chó",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Hổ",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Sư tử",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Voi",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Gấu",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Trâu",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Bò",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Lợn",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Gà",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Vịt",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Ngựa",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Khỉ",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Thỏ",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Sóc",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Hươu cao cổ",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Hà mã",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Tê giác",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Cá sấu",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Rùa",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Rắn",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Ếch",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Đại bàng",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Chim ưng",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Cú mèo",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Chim cánh cụt",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Cá heo",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Cá voi",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Cá mập",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Bạch tuộc",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Tôm",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Cua",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Nhện",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Ong",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Bướm",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Kiến",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Muỗi",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Ruồi",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Gián",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Chuột",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Chuột túi",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Gấu trúc",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Lạc đà",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Dê",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Cừu",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Ngỗng",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Đà điểu", 
+		"category": "Động vật"
+    },
+    {
+        "text": "Con Công",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Thiên nga",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Sứa",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Sao biển",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Hải cẩu",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Sói",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Cáo",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Nhím",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Tắc kè",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Kỳ đà",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Lươn",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Ốc sên",
+        "category": "Động vật"
+    },
+    {
+        "text": "Con Chuồn chuồn",
+        "category": "Động vật"
+    },
+    {
+        "text": "Bác sĩ",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Y tá",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Giáo viên",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Kỹ sư",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Công an",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Bộ đội",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Luật sư",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Kế toán",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Giám đốc",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Nhân viên văn phòng",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Lập trình viên",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Họa sĩ",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Nhạc sĩ",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Ca sĩ",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Diễn viên",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Đầu bếp",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Thợ cắt tóc",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Thợ sửa xe",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Thợ điện",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Thợ nước",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Thợ xây",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Kiến trúc sư",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Nhà báo",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Phóng viên",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Phi công",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Tiếp viên hàng không",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Nông dân",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Ngư dân",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Thợ mộc",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Thợ may",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Nhiếp ảnh gia",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Hướng dẫn viên du lịch",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Tài xế",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Bảo vệ",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Lao công",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Dược sĩ",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Nha sĩ",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Bác sĩ thú y",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Nhà tâm lý học",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Nhà khoa học",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Nhà văn",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Biên kịch",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Đạo diễn",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Người mẫu",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Vận động viên",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Huấn luyện viên",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Thợ làm móng",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Thợ trang điểm",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Thợ kim hoàn",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Thợ khóa",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Thợ giày",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Thợ hàn",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Thợ sơn",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Thợ lặn",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Thợ làm bánh",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Nhân viên bán hàng",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Nhân viên kinh doanh",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Nhân viên phục vụ",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Lễ tân",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Thư ký",
+        "category": "Nghề nghiệp"
+    },
+    {
+        "text": "Quả Táo",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Quả Cam",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Quả Nho",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Quả Lê",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Quả Đào",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Quả Mận",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Quả Mơ",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Dưa hấu",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Dưa lưới",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Dưa gang",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Dưa lê",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Quả Chuối",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Quả Xoài",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Quả Dứa",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Quả Ổi",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Quả Cóc",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Chôm chôm",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Quả Vải",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Quả Nhãn",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Măng cụt",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Sầu riêng",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Quả Mít",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Quả Bơ",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Thanh long",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Quả Lựu",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Quả Bưởi",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Quả Quýt",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Quả Chanh",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Chanh dây",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Dâu tây",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Việt quất",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Mâm xôi",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Dâu tằm",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Quả Hồng",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Hồng xiêm",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Vú sữa",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Quả Na",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Mãng cầu xiêm",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Quả Khế",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Quả Me",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Tầm ruột",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Bòn bon",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Quả Dừa",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Quả Cau",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Quả Sung",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Đu đủ",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Chuối hột",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Chuối tiêu",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Chuối tây",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Chuối ngự",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Chuối sứ",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Cam sành",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Cam canh",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Quả Quất",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Phật thủ",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Táo mèo",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Táo ta",
+        "category": "Trái cây"
+    },
+    {
+        "text": "Rau muống",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Rau cải thìa",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Rau ngót",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Rau dền",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Rau mồng tơi",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Rau lang",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Bắp cải",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Súp lơ xanh",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Súp lơ trắng",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Cải thảo",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Cải xoong",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Cải cúc",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Cải bẹ xanh",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Xà lách",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Rau má",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Rau cần tây",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Rau cần ta",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Rau thì là",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Hành lá",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Hành tây",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Tỏi",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Gừng",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Nghệ",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Cà rốt",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Khoai tây",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Khoai lang",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Khoai môn",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Khoai sọ",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Củ cải trắng",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Củ dền",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Su hào",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Bí đỏ",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Bí xanh",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Bí ngòi",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Mướp",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Mướp đắng",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Bầu",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Su su",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Dưa chuột",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Cà chua",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Cà tím",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Đậu cô ve",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Đậu Hà Lan",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Đậu bắp",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Đậu đũa",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Giá đỗ",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Nấm rơm",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Nấm hương",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Nấm kim châm",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Nấm mộc nhĩ",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Ớt chuông",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Ớt cay",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Măng tây",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Măng tre",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Ngô ngọt",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Hạt sen",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Củ sen",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Rau kinh giới",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Rau tía tô",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Rau húng quế",
+        "category": "Rau củ"
+    },
+    {
+        "text": "Xe đạp",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Xe máy",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Xe hơi",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Xe buýt",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Xe tải",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Xe khách",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Xe đạp điện",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Xe máy điện",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Xe xích lô",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Xe ba gác",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Tàu hỏa",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Tàu điện ngầm",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Tàu cao tốc",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Máy bay",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Trực thăng",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Thuyền",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Ca nô",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Phà",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Du thuyền",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Tàu thủy",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Xe cứu thương",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Xe cứu hỏa",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Xe cảnh sát",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Xe tăng",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Xe bọc thép",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Xe cần cẩu",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Xe ủi",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Xe lu",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Xe xúc",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Xe trộn bê tông",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Xe rác",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Xe đầu kéo",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Xe bán tải",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Xe địa hình",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Xe đua",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Xe mô tô",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Xe tay ga",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Xe số",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Xe côn tay",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Khinh khí cầu",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Tàu ngầm",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Tàu vũ trụ",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Vệ tinh",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Cáp treo",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Thuyền thúng",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Bè",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Cái Ghe",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Xuồng",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Ván trượt",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Xe lôi",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Xe lam",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Xe ngựa",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Xe bò",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Xe kéo",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Xe đẩy",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Xe nâng",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Xe điện sân gôn",
+        "category": "Phương tiện"
+    },
+    {
+        "text": "Cái Bàn",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Cái Ghế",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Tủ quần áo",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Cái Giường",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Kệ sách",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Tủ lạnh",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Máy giặt",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Điều hòa",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Quạt máy",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Ti vi",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Lò vi sóng",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Nồi cơm điện",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Bếp ga",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Bếp từ",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Máy hút bụi",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Bàn là",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Máy sấy tóc",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Máy xay sinh tố",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Ấm siêu tốc",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Cái Bát",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Cái Đĩa",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Đôi Đũa",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Cái Thìa",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Cái Dĩa",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Cái Nồi",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Cái Chảo",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Con Dao",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Cái Thớt",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Cái Cốc",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Bình nước",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Cái Rổ",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Khăn mặt",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Khăn tắm",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Bàn chải đánh răng",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Cái Gương",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Cái Lược",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Đèn bàn",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Đồng hồ treo tường",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Rèm cửa",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Thảm lau chân",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Chổi quét nhà",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Cây lau nhà",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Cái Hót rác",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Cái Xô",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Cái Chậu",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Móc treo quần áo",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Kẹp quần áo",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Bình hoa",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Tranh treo tường",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Cái Gối",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Cái Chăn",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Ga trải giường",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Đệm",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Cái Kéo",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Bấm móng tay",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Lịch treo tường",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Ổ cắm điện",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Đèn pin",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Hộp đựng giấy ăn",
+        "category": "Đồ dùng gia đình"
+    },
+    {
+        "text": "Màu Đỏ",
+        "category": "Màu sắc"
+    },
+    {
+        "text": "Màu Xanh Dương",
+        "category": "Màu sắc"
+    },
+    {
+        "text": "Màu Vàng",
+        "category": "Màu sắc"
+    },
+    {
+        "text": "Màu Tím",
+        "category": "Màu sắc"
+    },
+    {
+        "text": "Màu Cam",
+        "category": "Màu sắc"
+    },
+    {
+        "text": "Màu Đen",
+        "category": "Màu sắc"
+    },
+    {
+        "text": "Màu Trắng",
+        "category": "Màu sắc"
+    },
+    {
+        "text": "Màu Hồng",
+        "category": "Màu sắc"
+    },
+    {
+        "text": "Màu Xám",
+        "category": "Màu sắc"
+    },
+    {
+        "text": "Màu Nâu",
+        "category": "Màu sắc"
+    },
+    {
+        "text": "Màu Xanh Lá",
+        "category": "Màu sắc"
+    },
+    {
+        "text": "Màu Be",
+        "category": "Màu sắc"
+    },
+    {
+        "text": "Mặt trời",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Mặt trăng",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Ngôi sao",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Trái đất",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Bầu trời",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Đám mây",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Cơn mưa",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Cơn gió",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Sấm sét",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Cầu vồng",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Ngọn núi",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Quả đồi",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Thung lũng",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Hang động",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Rừng rậm",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Biển cả",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Đại dương",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Dòng sông",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Con suối",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Hồ nước",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Thác nước",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Hòn đảo",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Sa mạc",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Đồng cỏ",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Bãi biển",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Hòn đá",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Đất",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Cát",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Cây cối",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Bông hoa",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Ngọn cỏ",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Chiếc lá",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Cành cây",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Rễ cây",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Bụi rậm",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Cánh đồng",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Bình minh",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Hoàng hôn",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Sương mù",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Tuyết rơi",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Băng giá",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Sóng biển",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Thủy triều",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Núi lửa",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Động đất",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Lũ lụt",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Hạn hán",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Lốc xoáy",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Bão tố",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Rặng san hô",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Vách đá",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Ao hồ",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Cồn cát",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Đầm lầy",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Rừng ngập mặn",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Thảo nguyên",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Cao nguyên",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Vịnh biển",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Suối nước nóng",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Khoáng sản",
+        "category": "Thiên nhiên"
+    },
+    {
+        "text": "Việt Nam",
+        "category": "Quốc gia"
+    },
+    {
+        "text": "Nhật Bản",
+        "category": "Quốc gia"
+    },
+    {
+        "text": "Hàn Quốc",
+        "category": "Quốc gia"
+    },
+    {
+        "text": "Mỹ",
+        "category": "Quốc gia"
+    },
+    {
+        "text": "Trung Quốc",
+        "category": "Quốc gia"
+    },
+    {
+        "text": "Pháp",
+        "category": "Quốc gia"
+    },
+    {
+        "text": "Anh",
+        "category": "Quốc gia"
+    },
+    {
+        "text": "Đức",
+        "category": "Quốc gia"
+    },
+    {
+        "text": "Nga",
+        "category": "Quốc gia"
+    },
+    {
+        "text": "Thái Lan",
+        "category": "Quốc gia"
+    },
+    {
+        "text": "Lào",
+        "category": "Quốc gia"
+    },
+    {
+        "text": "Úc",
+        "category": "Quốc gia"
+    },
+    {
+        "text": "Ca na đa",
+        "category": "Quốc gia"
+    },
+    {
+        "text": "Bóng đá",
+        "category": "Thể thao"
+    },
+    {
+        "text": "Bóng rổ",
+        "category": "Thể thao"
+    },
+    {
+        "text": "Bóng chuyền",
+        "category": "Thể thao"
+    },
+    {
+        "text": "Cầu lông",
+        "category": "Thể thao"
+    },
+    {
+        "text": "Quần vợt",
+        "category": "Thể thao"
+    },
+    {
+        "text": "Bóng bàn",
+        "category": "Thể thao"
+    },
+    {
+        "text": "Bơi lội",
+        "category": "Thể thao"
+    },
+    {
+        "text": "Điền kinh",
+        "category": "Thể thao"
+    },
+    {
+        "text": "Cử tạ",
+        "category": "Thể thao"
+    },
+    {
+        "text": "Thể dục dụng cụ",
+        "category": "Thể thao"
+    },
+    {
+        "text": "Bắn cung",
+        "category": "Thể thao"
+    },
+    {
+        "text": "Bắn súng",
+        "category": "Thể thao"
+    },
+    {
+        "text": "Đua xe đạp",
+        "category": "Thể thao"
+    }, 
+    {
+        "text": "Đua ngựa",
+        "category": "Thể thao"
+    }, 
+    {
+        "text": "Võ cổ truyền",
+        "category": "Thể thao"
+    }, 
+    {
+        "text": "Quyền anh",
+        "category": "Thể thao"
+    }, 
+    {
+        "text": "Đấu vật",
+        "category": "Thể thao"
+    },
+    {
+        "text": "Đấu kiếm",
+        "category": "Thể thao"
+    },
+    {
+        "text": "Bóng chày",
+        "category": "Thể thao"
+    },
+    {
+        "text": "Bóng bầu dục",
+        "category": "Thể thao"
+    },
+    {
+        "text": "Bóng ném",
+        "category": "Thể thao"
+    },
+    {
+        "text": "Bóng nước",
+        "category": "Thể thao"
+    },
+    {
+        "text": "Cầu mây",
+        "category": "Thể thao"
+    },
+    {
+        "text": "Đá cầu",
+        "category": "Thể thao"
+    },
+    {
+        "text": "Kéo co",
+        "category": "Thể thao"
+    },
+    {
+        "text": "Nhảy dây",
+        "category": "Thể thao"
+    },
+    {
+        "text": "Leo núi",
+        "category": "Thể thao"
+    },
+    {
+        "text": "Trượt băng",
+        "category": "Thể thao"
+    },
+    {
+        "text": "Trượt tuyết",
+        "category": "Thể thao"
+    },
+    {
+        "text": "Trượt ván",
+        "category": "Thể thao"
+    },
+    {
+        "text": "Lướt sóng",
+        "category": "Thể thao"
+    },
+    {
+        "text": "Chèo thuyền",
+        "category": "Thể thao"
+    },
+    {
+        "text": "Đua thuyền",
+        "category": "Thể thao"
+    },
+    {
+        "text": "Lặn biển",
+        "category": "Thể thao"
+    },
+    {
+        "text": "Nhảy dù",
+        "category": "Thể thao"
+    },
+    {
+        "text": "Dù lượn",
+        "category": "Thể thao"
+    }, 
+    {
+        "text": "Thể hình",
+        "category": "Thể thao"
+    }, 
+    {
+        "text": "Bi a",
+        "category": "Thể thao"
+    },
+    {
+        "text": "Cờ vua",
+        "category": "Thể thao"
+    },
+    {
+        "text": "Cờ tướng",
+        "category": "Thể thao"
+    },
+    {
+        "text": "Cờ vây",
+        "category": "Thể thao"
+    }, 
+    {
+        "text": "Ba môn phối hợp",
+        "category": "Thể thao"
+    },
+    {
+        "text": "Khúc côn cầu",
+        "category": "Thể thao"
+    },
+    {
+        "text": "Bóng gỗ",
+        "category": "Thể thao"
+    },
+    {
+        "text": "Bóng cửa",
+        "category": "Thể thao"
+    },
+    {
+        "text": "Học sinh",
+        "category": "Trường học"
+    },
+    {
+        "text": "Giáo viên",
+        "category": "Trường học"
+    },
+    {
+        "text": "Hiệu trưởng",
+        "category": "Trường học"
+    },
+    {
+        "text": "Giám thị",
+        "category": "Trường học"
+    },
+    {
+        "text": "Lớp trưởng",
+        "category": "Trường học"
+    },
+    {
+        "text": "Bảo vệ",
+        "category": "Trường học"
+    },
+    {
+        "text": "Lao công",
+        "category": "Trường học"
+    },
+    {
+        "text": "Phòng học",
+        "category": "Trường học"
+    },
+    {
+        "text": "Bàn học",
+        "category": "Trường học"
+    },
+    {
+        "text": "Ghế ngồi",
+        "category": "Trường học"
+    },
+    {
+        "text": "Bảng đen",
+        "category": "Trường học"
+    },
+    {
+        "text": "Phấn trắng",
+        "category": "Trường học"
+    },
+    {
+        "text": "Khăn lau bảng",
+        "category": "Trường học"
+    },
+    {
+        "text": "Sách giáo khoa",
+        "category": "Trường học"
+    },
+    {
+        "text": "Vở ghi",
+        "category": "Trường học"
+    },
+    {
+        "text": "Bút bi",
+        "category": "Trường học"
+    },
+    {
+        "text": "Bút chì",
+        "category": "Trường học"
+    },
+    {
+        "text": "Thước kẻ",
+        "category": "Trường học"
+    },
+    {
+        "text": "Cục tẩy",
+        "category": "Trường học"
+    },
+    {
+        "text": "Hộp bút",
+        "category": "Trường học"
+    },
+    {
+        "text": "Ba lô",
+        "category": "Trường học"
+    },
+    {
+        "text": "Đồng phục",
+        "category": "Trường học"
+    },
+    {
+        "text": "Thẻ học sinh",
+        "category": "Trường học"
+    },
+    {
+        "text": "Thời khóa biểu",
+        "category": "Trường học"
+    },
+    {
+        "text": "Sổ đầu bài",
+        "category": "Trường học"
+    },
+    {
+        "text": "Bài kiểm tra",
+        "category": "Trường học"
+    },
+    {
+        "text": "Điểm số",
+        "category": "Trường học"
+    },
+    {
+        "text": "Hạnh kiểm",
+        "category": "Trường học"
+    },
+    {
+        "text": "Giấy khen",
+        "category": "Trường học"
+    },
+    {
+        "text": "Bằng tốt nghiệp",
+        "category": "Trường học"
+    },
+    {
+        "text": "Thư viện",
+        "category": "Trường học"
+    },
+    {
+        "text": "Sân trường",
+        "category": "Trường học"
+    },
+    {
+        "text": "Cổng trường",
+        "category": "Trường học"
+    },
+    {
+        "text": "Nhà xe",
+        "category": "Trường học"
+    },
+    {
+        "text": "Canteen",
+        "category": "Trường học"
+    },
+    {
+        "text": "Phòng thí nghiệm",
+        "category": "Trường học"
+    },
+    {
+        "text": "Phòng tin học",
+        "category": "Trường học"
+    },
+    {
+        "text": "Phòng y tế",
+        "category": "Trường học"
+    },
+    {
+        "text": "Nhà vệ sinh",
+        "category": "Trường học"
+    },
+    {
+        "text": "Trống trường",
+        "category": "Trường học"
+    },
+    {
+        "text": "Giờ ra chơi",
+        "category": "Trường học"
+    },
+    {
+        "text": "Lễ chào cờ",
+        "category": "Trường học"
+    },
+    {
+        "text": "Khai giảng",
+        "category": "Trường học"
+    },
+    {
+        "text": "Bế giảng",
+        "category": "Trường học"
+    },
+    {
+        "text": "Họp phụ huynh",
+        "category": "Trường học"
+    },
+    {
+        "text": "Bài tập về nhà",
+        "category": "Trường học"
+    },
+    {
+        "text": "Môn Toán",
+        "category": "Trường học"
+    },
+    {
+        "text": "Môn Văn",
+        "category": "Trường học"
+    },
+    {
+        "text": "Môn Anh",
+        "category": "Trường học"
+    },
+    {
+        "text": "Môn Lý",
+        "category": "Trường học"
+    },
+    {
+        "text": "Môn Hóa",
+        "category": "Trường học"
+    },
+    {
+        "text": "Môn Sinh",
+        "category": "Trường học"
+    },
+    {
+        "text": "Môn Sử",
+        "category": "Trường học"
+    },
+    {
+        "text": "Môn Địa",
+        "category": "Trường học"
+    },
+    {
+        "text": "Môn Thể dục",
+        "category": "Trường học"
+    },
+    {
+        "text": "Môn Âm nhạc",
+        "category": "Trường học"
+    },
+    {
+        "text": "Môn Mỹ thuật",
+        "category": "Trường học"
+    },
+    {
+        "text": "Máy chiếu",
+        "category": "Trường học"
+    },
+    {
+        "text": "Micro",
+        "category": "Trường học"
+    },
+    {
+        "text": "Loa",
+        "category": "Trường học"
+    },
+    {
+        "text": "Mắt",
+        "category": "Cơ thể người"
+    },
+    {
+        "text": "Mũi",
+        "category": "Cơ thể người"
+    },
+    {
+        "text": "Miệng",
+        "category": "Cơ thể người"
+    },
+    {
+        "text": "Tai",
+        "category": "Cơ thể người"
+    },
+    {
+        "text": "Tay",
+        "category": "Cơ thể người"
+    },
+    {
+        "text": "Chân",
+        "category": "Cơ thể người"
+    },
+    {
+        "text": "Đầu",
+        "category": "Cơ thể người"
+    },
+    {
+        "text": "Tóc",
+        "category": "Cơ thể người"
+    },
+    {
+        "text": "Ngón Tay",
+        "category": "Cơ thể người"
+    },
+    {
+        "text": "Ngón Chân",
+        "category": "Cơ thể người"
+    },
+    {
+        "text": "Bụng",
+        "category": "Cơ thể người"
+    },
+    {
+        "text": "Lưng",
+        "category": "Cơ thể người"
+    },
+    {
+        "text": "Răng",
+        "category": "Cơ thể người"
+    },
+    {
+        "text": "Lưỡi",
+        "category": "Cơ thể người"
+    },
+    {
+        "text": "Cổ",
+        "category": "Cơ thể người"
+    },
+    {
+        "text": "Áo Sơ Mi",
+        "category": "Quần áo"
+    },
+    {
+        "text": "Áo Thun",
+        "category": "Quần áo"
+    },
+    {
+        "text": "Váy",
+        "category": "Quần áo"
+    },
+    {
+        "text": "Đầm",
+        "category": "Quần áo"
+    },
+    {
+        "text": "Áo Khoác",
+        "category": "Quần áo"
+    },
+    {
+        "text": "Áo Len",
+        "category": "Quần áo"
+    },
+    {
+        "text": "Mũ",
+        "category": "Quần áo"
+    },
+    {
+        "text": "Giày",
+        "category": "Quần áo"
+    },
+    {
+        "text": "Dép",
+        "category": "Quần áo"
+    },
+    {
+        "text": "Tất",
+        "category": "Quần áo"
+    },
+    {
+        "text": "Khăn Quàng Cổ",
+        "category": "Quần áo"
+    },
+    {
+        "text": "Găng Tay",
+        "category": "Quần áo"
+    },
+    {
+        "text": "Thắt Lưng",
+        "category": "Quần áo"
+    },
+    {
+        "text": "Phở bò",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Bún chả",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Bánh mì",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Cơm tấm",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Bún bò Huế",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Hủ tiếu",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Bánh xèo",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Gỏi cuốn",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Nem rán",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Bánh cuốn",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Chả cá Lã Vọng",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Bún riêu",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Mì Quảng",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Cao lầu",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Cơm gà",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Bánh khọt",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Bánh bèo",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Bánh bột lọc",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Xôi xéo",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Xôi gấc",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Bún đậu mắm tôm",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Lẩu thái",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Lẩu nấm",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Cá kho tộ",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Canh chua",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Rau muống xào tỏi",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Thịt kho tàu",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Gà luộc",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Vịt quay",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Heo quay",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Cháo lòng",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Bún thang",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Bánh đa cua",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Nem lụi",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Bò né",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Bò kho",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Cà ri gà",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Súp cua",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Cháo ếch",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Ốc luộc",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Ốc xào me",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Hàu nướng mỡ hành",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Tôm hùm hấp",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Cua rang me",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Mực nướng",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Bạch tuộc nướng",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Lẩu hải sản",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Cơm rang dưa bò",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Mì xào bò",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Nộm bò khô",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Bánh tráng trộn",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Bánh rán",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Bánh chưng",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Bánh tét",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Giò lụa",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Chả quế",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Nem chua",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Chè thập cẩm",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Tào phớ",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Sữa chua nếp cẩm",
+        "category": "Món ăn"
+    },
+    {
+        "text": "Ông",
+        "category": "Gia đình"
+    },
+    {
+        "text": "Bà",
+        "category": "Gia đình"
+    },
+    {
+        "text": "Bố",
+        "category": "Gia đình"
+    },
+    {
+        "text": "Mẹ",
+        "category": "Gia đình"
+    },
+    {
+        "text": "Anh Trai",
+        "category": "Gia đình"
+    },
+    {
+        "text": "Chị Gái",
+        "category": "Gia đình"
+    },
+    {
+        "text": "Em Trai",
+        "category": "Gia đình"
+    },
+    {
+        "text": "Em Gái",
+        "category": "Gia đình"
+    },
+    {
+        "text": "Chú",
+        "category": "Gia đình"
+    },
+    {
+        "text": "Bác",
+        "category": "Gia đình"
+    },
+    {
+        "text": "Cô",
+        "category": "Gia đình"
+    },
+    {
+        "text": "Dì",
+        "category": "Gia đình"
+    },
+    {
+        "text": "Cậu",
+        "category": "Gia đình"
+    },
+    {
+        "text": "Mợ",
+        "category": "Gia đình"
+    },
+    {
+        "text": "Thím",
+        "category": "Gia đình"
+    },
+    {
+        "text": "Nắng",
+        "category": "Thời tiết"
+    },
+    {
+        "text": "Mưa",
+        "category": "Thời tiết"
+    },
+    {
+        "text": "Gió",
+        "category": "Thời tiết"
+    },
+    {
+        "text": "Bão",
+        "category": "Thời tiết"
+    },
+    {
+        "text": "Mây",
+        "category": "Thời tiết"
+    },
+    {
+        "text": "Sấm",
+        "category": "Thời tiết"
+    },
+    {
+        "text": "Chớp",
+        "category": "Thời tiết"
+    },
+    {
+        "text": "Tuyết",
+        "category": "Thời tiết"
+    },
+    {
+        "text": "Sương Mù",
+        "category": "Thời tiết"
+    },
+    {
+        "text": "Nóng",
+        "category": "Thời tiết"
+    },
+    {
+        "text": "Lạnh",
+        "category": "Thời tiết"
+    },
+    {
+        "text": "Ẩm Ướt",
+        "category": "Thời tiết"
+    },
+    {
+        "text": "Khô Hanh",
+        "category": "Thời tiết"
+    },
+    {
+        "text": "Vui Vẻ",
+        "category": "Cảm xúc"
+    },
+    {
+        "text": "Buồn Bã",
+        "category": "Cảm xúc"
+    },
+    {
+        "text": "Giận Dữ",
+        "category": "Cảm xúc"
+    },
+    {
+        "text": "Sợ Hãi",
+        "category": "Cảm xúc"
+    },
+    {
+        "text": "Hạnh Phúc",
+        "category": "Cảm xúc"
+    },
+    {
+        "text": "Lo Lắng",
+        "category": "Cảm xúc"
+    },
+    {
+        "text": "Ngạc Nhiên",
+        "category": "Cảm xúc"
+    },
+    {
+        "text": "Hào Hứng",
+        "category": "Cảm xúc"
+    },
+    {
+        "text": "Chán Nản",
+        "category": "Cảm xúc"
+    },
+    {
+        "text": "Mệt Mỏi",
+        "category": "Cảm xúc"
+    },
+    {
+        "text": "Thất Vọng",
+        "category": "Cảm xúc"
+    },
+    {
+        "text": "Hy Vọng",
+        "category": "Cảm xúc"
+    },
+    {
+        "text": "Tự Tin",
+        "category": "Cảm xúc"
+    },
+    {
+        "text": "Phòng Khách",
+        "category": "Nhà cửa"
+    },
+    {
+        "text": "Phòng Ngủ",
+        "category": "Nhà cửa"
+    },
+    {
+        "text": "Phòng Bếp",
+        "category": "Nhà cửa"
+    },
+    {
+        "text": "Phòng Tắm",
+        "category": "Nhà cửa"
+    },
+    {
+        "text": "Sân Vườn",
+        "category": "Nhà cửa"
+    },
+    {
+        "text": "Ban Công",
+        "category": "Nhà cửa"
+    },
+    {
+        "text": "Cầu Thang",
+        "category": "Nhà cửa"
+    },
+    {
+        "text": "Cửa Sổ",
+        "category": "Nhà cửa"
+    },
+    {
+        "text": "Cửa Ra Vào",
+        "category": "Nhà cửa"
+    },
+    {
+        "text": "Mái Nhà",
+        "category": "Nhà cửa"
+    },
+    {
+        "text": "Đàn Ghi Ta",
+        "category": "Nhạc cụ"
+    },
+    {
+        "text": "Đàn Pi a nô",
+        "category": "Nhạc cụ"
+    },
+    {
+        "text": "Trống",
+        "category": "Nhạc cụ"
+    },
+    {
+        "text": "Sáo",
+        "category": "Nhạc cụ"
+    },
+    {
+        "text": "Đàn Bầu",
+        "category": "Nhạc cụ"
+    },
+    {
+        "text": "Đàn Tranh",
+        "category": "Nhạc cụ"
+    },
+    {
+        "text": "Kèn",
+        "category": "Nhạc cụ"
+    },
+    {
+        "text": "Máy tính",
+        "category": "Công nghệ"
+    }, 
+    {
+        "text": "Điện thoại thông minh",
+        "category": "Công nghệ"
+    },
+    {
+        "text": "Máy tính bảng",
+        "category": "Công nghệ"
+    },
+    {
+        "text": "Đồng hồ thông minh",
+        "category": "Công nghệ"
+    },
+    {
+        "text": "Bàn phím",
+        "category": "Công nghệ"
+    },
+    {
+        "text": "Chuột máy tính",
+        "category": "Công nghệ"
+    },
+    {
+        "text": "Màn hình",
+        "category": "Công nghệ"
+    },
+    {
+        "text": "Máy in",
+        "category": "Công nghệ"
+    },
+    {
+        "text": "Máy quét",
+        "category": "Công nghệ"
+    },
+    {
+        "text": "Tai nghe",
+        "category": "Công nghệ"
+    }, 
+    {
+        "text": "Bo mạch chủ",
+        "category": "Công nghệ"
+    }, 
+    {
+        "text": "Pin dự phòng",
+        "category": "Công nghệ"
+    },
+    {
+        "text": "Cáp sạc",
+        "category": "Công nghệ"
+    },
+    {
+        "text": "Phần mềm",
+        "category": "Công nghệ"
+    },
+    {
+        "text": "Phần cứng",
+        "category": "Công nghệ"
+    }, 
+    {
+        "text": "Ứng dụng di động",
+        "category": "Công nghệ"
+    },
+    {
+        "text": "Điện toán đám mây",
+        "category": "Công nghệ"
+    },
+    {
+        "text": "Trí tuệ nhân tạo",
+        "category": "Công nghệ"
+    }, 
+    {
+        "text": "Ti vi thông minh",
+        "category": "Công nghệ"
+    },
+    {
+        "text": "Máy chơi game",
+        "category": "Công nghệ"
+    },
+    {
+        "text": "Máy chủ",
+        "category": "Công nghệ"
+    },
+    {
+        "text": "Cơ sở dữ liệu",
+        "category": "Công nghệ"
+    },
+    {
+        "text": "Mã nguồn",
+        "category": "Công nghệ"
+    },
+    {
+        "text": "Thuật toán",
+        "category": "Công nghệ"
+    },
+    {
+        "text": "Mạng máy tính",
+        "category": "Công nghệ"
+    },
+    {
+        "text": "An ninh mạng",
+        "category": "Công nghệ"
+    },
+    {
+        "text": "Vi rút máy tính",
+        "category": "Công nghệ"
+    },
+    {
+        "text": "Phần mềm diệt vi rút",
+        "category": "Công nghệ"
+    }, 
+    {
+        "text": "Lập trình viên",
+        "category": "Công nghệ"
+    }, 
+    {
+        "text": "Mạng xã hội",
+        "category": "Công nghệ"
+    }, 
+    {
+        "text": "Thực tế ảo",
+        "category": "Công nghệ"
+    },
+    {
+        "text": "Thực tế tăng cường",
+        "category": "Công nghệ"
+    }, 
+    {
+        "text": "Tiền điện tử",
+        "category": "Công nghệ"
+    },
+    {
+        "text": "Mạng 5 Gờ",
+        "category": "Công nghệ"
+    },
+    {
+        "text": "Vệ tinh",
+        "category": "Công nghệ"
+    }, 
+    {
+        "text": "Công nghệ sinh học",
+        "category": "Công nghệ"
+    },
+    {
+        "text": "Xe tự lái",
+        "category": "Công nghệ"
+    },
+    {
+        "text": "Nhà thông minh",
+        "category": "Công nghệ"
+    }
+]
